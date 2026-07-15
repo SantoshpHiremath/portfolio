@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Santosh Hiremath — AI &amp; Data Portfolio</title>
+  <meta name="description" content="Santosh Hiremath — Master's student in AI for Industrial Applications. Data pipelines, RAG agents, and AI automation projects built on real, messy data.">
+
+  <!-- Open Graph / social share preview tags — control how this page looks when
+       pasted as a link in LinkedIn, WhatsApp, email, etc. Without these, most
+       platforms show a blank or generic preview. -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Santosh Hiremath — AI & Data Portfolio">
+  <meta property="og:description" content="Data pipelines, RAG agents, and AI automation projects built on real, messy data.">
+  <meta property="og:url" content="https://santoshphiremath.github.io/portfolio/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Santosh Hiremath — AI & Data Portfolio">
+  <meta name="twitter:description" content="Data pipelines, RAG agents, and AI automation projects built on real, messy data.">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧑‍💻</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="site-header" id="site-header">
+    <nav class="navbar">
+      <a href="#top" class="logo">SH<span class="logo-dot">.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#stats">Impact</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+          <span class="icon-moon">🌙</span>
+        </button>
+        <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="top" class="hero">
+    <!-- Animated gradient mesh background — pure CSS, layered radial gradients that drift via keyframes -->
+    <div class="gradient-mesh" aria-hidden="true">
+      <span class="blob blob-1"></span>
+      <span class="blob blob-2"></span>
+      <span class="blob blob-3"></span>
+    </div>
+    <div class="hero-grid-overlay" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Master's Student · AI for Industrial Applications</p>
+      <h1 class="hero-title">
+        <span class="reveal" style="--d:0">Hi, I'm</span>
+        <span class="reveal gradient-text" style="--d:1">Santosh Hiremath</span>
+      </h1>
+      <p class="hero-text reveal" style="--d:2">
+        I build data pipelines and AI agents that hold up against real, messy data —
+        and I test them until I trust them, not until they look good on a slide.
+      </p>
+      <div class="hero-actions reveal" style="--d:3">
+        <a href="#projects" class="btn-primary">
+          <span>View my work</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/santosh-hiremath06" target="_blank" rel="noopener" class="btn-secondary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll down">
+      <span class="scroll-cue-dot"></span>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="about section-reveal">
+    <div class="section-heading">
+      <span class="section-tag">01 — About</span>
+      <h2>A little about me</h2>
+    </div>
+    <div class="about-grid">
+      <p class="about-text">
+        I'm a Master's student in Artificial Intelligence for Industrial Applications at
+        OTH Amberg-Weiden, currently in my third semester. My background is in building
+        data pipelines, dashboards, and AI agents from scratch — cleaning real, messy
+        datasets, validating models honestly instead of cherry-picking results, and
+        automating repetitive work with tools like Power Automate and Microsoft Copilot Studio.
+        Before my Master's, I worked as a Service Contracts Associate at UL Solutions in
+        Bengaluru, coordinating financial and contract data across teams.
+      </p>
+      <div class="about-tools">
+        <span class="tool-chip">Python</span>
+        <span class="tool-chip">SQL</span>
+        <span class="tool-chip">LangChain</span>
+        <span class="tool-chip">FAISS</span>
+        <span class="tool-chip">Power BI</span>
+        <span class="tool-chip">Power Automate</span>
+        <span class="tool-chip">Copilot Studio</span>
+        <span class="tool-chip">Databricks</span>
+        <span class="tool-chip">HTML/CSS/JS</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE & EDUCATION ===== -->
+  <section id="experience" class="experience section-reveal">
+    <div class="section-heading">
+      <span class="section-tag">Experience &amp; Education</span>
+      <h2>Where I've been</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Since March 2025</span>
+          <h3>MSc Artificial Intelligence for Industrial Applications</h3>
+          <p class="timeline-org">OTH Amberg-Weiden · Germany</p>
+          <p class="timeline-desc">Currently in my third semester. Relevant coursework: Machine Learning, Data Engineering, Industrial AI Applications.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Oct 2023 – Feb 2025</span>
+          <h3>Service Contracts Associate</h3>
+          <p class="timeline-org">UL Solutions · Bengaluru, India</p>
+          <p class="timeline-desc">
+            Aggregated, structured, and validated complex financial and contract data across multiple linked systems
+            with relational data models (Oracle Service Contracts) — coordinated cross-team and documented processes
+            to ensure reconciliation accuracy. Introduced standardized processes and served as first point of contact
+            for cross-departmental data discrepancies, reducing escalations.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Sep 2020 – Oct 2023</span>
+          <h3>BSc Applied Computer Science</h3>
+          <p class="timeline-org">P C Jabin Science College · Hubli, India</p>
+          <p class="timeline-desc">Final grade: 2.2 (German grading scale equivalent).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section id="stats" class="stats section-reveal">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-number" data-target="148136" data-suffix="">0</span>
+        <span class="stat-label">Raw records cleaned in the EV project</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" data-target="29" data-suffix="">0</span>
+        <span class="stat-label">Automated tests validating the RAG agent</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" data-target="8" data-suffix="">0</span>
+        <span class="stat-label">SQL analytical queries written</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" data-target="6" data-suffix="">0</span>
+        <span class="stat-label">End-to-end projects shipped</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="projects section-reveal">
+    <div class="section-heading">
+      <span class="section-tag">02 — Projects</span>
+      <h2>Things I've built</h2>
+    </div>
+
+    <!-- Filter + search controls -->
+    <div class="project-controls">
+      <div class="filter-tags" id="filter-tags">
+        <button class="tag-btn active" data-filter="all">All</button>
+        <button class="tag-btn" data-filter="data">Data Engineering</button>
+        <button class="tag-btn" data-filter="ai">AI Agents</button>
+        <button class="tag-btn" data-filter="automation">Automation</button>
+      </div>
+      <div class="search-wrap">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" class="search-icon"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input type="text" id="project-search" class="search-box" placeholder="Search projects…">
+      </div>
+    </div>
+
+    <div class="project-grid" id="project-grid">
+
+      <article class="project-card" data-tags="data ai" tabindex="0" data-modal="ev">
+        <div class="card-glow"></div>
+        <div class="card-visual card-visual-chart" aria-hidden="true">
+          <svg width="100%" height="64" viewBox="0 0 220 64" preserveAspectRatio="none">
+            <rect x="6" y="30" width="18" height="28" rx="3" class="bar bar-1"/>
+            <rect x="32" y="18" width="18" height="40" rx="3" class="bar bar-2"/>
+            <rect x="58" y="8" width="18" height="50" rx="3" class="bar bar-3"/>
+            <rect x="84" y="24" width="18" height="34" rx="3" class="bar bar-1"/>
+            <rect x="110" y="4" width="18" height="54" rx="3" class="bar bar-2"/>
+            <rect x="136" y="16" width="18" height="42" rx="3" class="bar bar-3"/>
+            <rect x="162" y="28" width="18" height="30" rx="3" class="bar bar-1"/>
+            <rect x="188" y="12" width="18" height="46" rx="3" class="bar bar-2"/>
+          </svg>
+        </div>
+        <span class="project-index">01</span>
+        <h3>EV Charging Station Utilization Dashboard</h3>
+        <p class="project-meta">Python · SQL · Power BI</p>
+        <p>
+          Cleaned 148,136 raw EV charging session records down to 85,748 verified rows —
+          catching a silent mixed-date-format bug and a duplicate-export error along the way —
+          then built 8 analytical SQL queries and an interactive Power BI dashboard.
+        </p>
+        <span class="card-link">Read more <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </article>
+
+      <article class="project-card" data-tags="ai" tabindex="0" data-modal="rag">
+        <div class="card-glow"></div>
+        <div class="card-visual card-visual-nodes" aria-hidden="true">
+          <svg width="100%" height="64" viewBox="0 0 220 64">
+            <line x1="30" y1="32" x2="100" y2="14" class="node-line"/>
+            <line x1="30" y1="32" x2="100" y2="32" class="node-line"/>
+            <line x1="30" y1="32" x2="100" y2="50" class="node-line"/>
+            <line x1="100" y1="14" x2="180" y2="32" class="node-line"/>
+            <line x1="100" y1="32" x2="180" y2="32" class="node-line"/>
+            <line x1="100" y1="50" x2="180" y2="32" class="node-line"/>
+            <circle cx="30" cy="32" r="9" class="node node-main"/>
+            <circle cx="100" cy="14" r="6" class="node"/>
+            <circle cx="100" cy="32" r="6" class="node"/>
+            <circle cx="100" cy="50" r="6" class="node"/>
+            <circle cx="180" cy="32" r="9" class="node node-main"/>
+          </svg>
+        </div>
+        <span class="project-index">02</span>
+        <h3>RAG &amp; Agentic AI Tool-Routing Demo</h3>
+        <p class="project-meta">Python · LangChain · FAISS · Ollama</p>
+        <p>
+          A fully local RAG pipeline: documents are chunked, indexed with local embeddings,
+          and retrieved via FAISS semantic search. A locally-run Llama 3.2 model decides
+          between retrieval, a calculator tool, or a direct answer — validated with a
+          29-test pytest suite that caught a real bug.
+        </p>
+        <span class="card-link">Read more <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </article>
+
+      <article class="project-card" data-tags="ai automation" tabindex="0" data-modal="copilot">
+        <div class="card-glow"></div>
+        <div class="card-visual card-visual-chat" aria-hidden="true">
+          <svg width="100%" height="64" viewBox="0 0 220 64">
+            <rect x="8" y="8" width="120" height="18" rx="9" class="chat-bubble chat-left"/>
+            <rect x="92" y="34" width="120" height="18" rx="9" class="chat-bubble chat-right"/>
+          </svg>
+        </div>
+        <span class="project-index">03</span>
+        <h3>Microsoft Copilot Studio — Student FAQ Agent</h3>
+        <p class="project-meta">Copilot Studio · Knowledge Sources</p>
+        <p>
+          A knowledge-based low-code AI agent built and tested in Microsoft Copilot Studio,
+          including configuring a real knowledge source and diagnosing a real indexing
+          error caused by an unsupported file format.
+        </p>
+        <span class="card-link">Read more <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </article>
+
+      <article class="project-card" data-tags="automation" tabindex="0" data-modal="power-automate">
+        <div class="card-glow"></div>
+        <div class="card-visual card-visual-flow" aria-hidden="true">
+          <svg width="100%" height="64" viewBox="0 0 220 64">
+            <rect x="4" y="22" width="46" height="20" rx="6" class="flow-box"/>
+            <rect x="87" y="22" width="46" height="20" rx="6" class="flow-box"/>
+            <rect x="170" y="22" width="46" height="20" rx="6" class="flow-box"/>
+            <line x1="50" y1="32" x2="87" y2="32" class="flow-line"/>
+            <line x1="133" y1="32" x2="170" y2="32" class="flow-line"/>
+            <path d="M80 32 l7 -4 v8 z" class="flow-arrow"/>
+            <path d="M163 32 l7 -4 v8 z" class="flow-arrow"/>
+          </svg>
+        </div>
+        <span class="project-index">04</span>
+        <h3>Power Automate — Job Application Tracker</h3>
+        <p class="project-meta">Power Automate · API Connectors</p>
+        <p>
+          A low-code workflow that classifies real job-application emails via API-based
+          connectors and logs them into an Excel tracker — including trigger configuration,
+          conditional keyword logic, and debugging a real run-history bug.
+        </p>
+        <span class="card-link">Read more <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </article>
+
+      <article class="project-card" data-tags="data" tabindex="0" data-modal="excel">
+        <div class="card-glow"></div>
+        <div class="card-visual card-visual-grid" aria-hidden="true">
+          <svg width="100%" height="64" viewBox="0 0 220 64">
+            <g class="grid-cells">
+              <rect x="4" y="4" width="50" height="14"/><rect x="58" y="4" width="50" height="14"/><rect x="112" y="4" width="50" height="14"/><rect x="166" y="4" width="50" height="14"/>
+              <rect x="4" y="22" width="50" height="14"/><rect x="58" y="22" width="50" height="14" class="cell-highlight"/><rect x="112" y="22" width="50" height="14"/><rect x="166" y="22" width="50" height="14"/>
+              <rect x="4" y="40" width="50" height="14"/><rect x="58" y="40" width="50" height="14"/><rect x="112" y="40" width="50" height="14" class="cell-highlight"/><rect x="166" y="40" width="50" height="14"/>
+            </g>
+          </svg>
+        </div>
+        <span class="project-index">05</span>
+        <h3>Retail Data Cleaning &amp; Analysis (Excel)</h3>
+        <p class="project-meta">Excel · COUNTIF · SUMIFS · Pivot Tables</p>
+        <p>
+          Cleaned 1,240 raw retail sales records into 1,190 verified rows using COUNTIF,
+          AVERAGEIF, and PROPER, then built SUMIFS/COUNTIFS/AVERAGEIFS pivot tables and
+          dashboard charts by region, category, and segment.
+        </p>
+        <span class="card-link">Read more <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </article>
+
+      <article class="project-card" data-tags="data ai" tabindex="0" data-modal="databricks">
+        <div class="card-glow"></div>
+        <div class="card-visual card-visual-scatter" aria-hidden="true">
+          <svg width="100%" height="64" viewBox="0 0 220 64">
+            <line x1="6" y1="58" x2="214" y2="58" class="axis-line"/>
+            <line x1="6" y1="58" x2="6" y2="6" class="axis-line"/>
+            <line x1="10" y1="52" x2="200" y2="14" class="trend-line"/>
+            <circle cx="24" cy="46" r="4" class="scatter-dot"/>
+            <circle cx="50" cy="38" r="4" class="scatter-dot"/>
+            <circle cx="72" cy="44" r="4" class="scatter-dot"/>
+            <circle cx="98" cy="28" r="4" class="scatter-dot"/>
+            <circle cx="124" cy="34" r="4" class="scatter-dot"/>
+            <circle cx="150" cy="20" r="4" class="scatter-dot"/>
+            <circle cx="176" cy="24" r="4" class="scatter-dot"/>
+            <circle cx="198" cy="12" r="4" class="scatter-dot"/>
+          </svg>
+        </div>
+        <span class="project-index">06</span>
+        <h3>Databricks &amp; PySpark ML Notebook</h3>
+        <p class="project-meta">Databricks · PySpark · MLlib · scikit-learn</p>
+        <p>
+          A Databricks/PySpark notebook building an MLlib regression pipeline — and
+          honestly reporting a real, low R² result rather than selectively picking a
+          better-looking metric.
+        </p>
+        <span class="card-link">Read more <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </article>
+
+    </div>
+
+    <p id="no-results" class="no-results hidden">No projects match your search.</p>
+  </section>
+
+  <!-- ===== PROJECT DETAIL MODAL ===== -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="modal" role="dialog" aria-modal="true">
+      <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
+      <div class="modal-body" id="modal-body">
+        <!-- filled dynamically by JS from the projectData object -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="contact section-reveal">
+    <div class="section-heading centered">
+      <span class="section-tag">03 — Contact</span>
+      <h2>Let's talk</h2>
+      <p class="contact-lead">Open to Working Student and Internship roles across Germany.</p>
+    </div>
+    <div class="contact-links">
+      <a href="mailto:santoshhiremath.de@gmail.com" class="contact-card">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 4h16v16H4V4z" stroke="currentColor" stroke-width="2"/><path d="M4 6l8 7 8-7" stroke="currentColor" stroke-width="2"/></svg>
+        <span>santoshhiremath.de@gmail.com</span>
+      </a>
+      <a href="https://www.linkedin.com/in/santosh-hiremath06" target="_blank" rel="noopener" class="contact-card">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        <span>linkedin.com/in/santosh-hiremath06</span>
+      </a>
+      <a href="https://github.com/SantoshpHiremath" target="_blank" rel="noopener" class="contact-card">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.04-.02-2.04-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23.96-.27 1.98-.4 3-.4s2.04.14 3 .4c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.81 1.1.81 2.22 0 1.6-.02 2.89-.02 3.29 0 .32.22.7.83.58C20.56 21.79 24 17.29 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        <span>github.com/SantoshpHiremath</span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Santosh Hiremath. Built with HTML, CSS, and JavaScript — no frameworks.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
